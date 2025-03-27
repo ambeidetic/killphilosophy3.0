@@ -1,0 +1,73 @@
+# KillPhilosophy Project Structure
+
+This document outlines the project structure for KillPhilosophy.
+
+## Root Directory
+
+```
+/
+├── index.html           # Main HTML file
+├── styles.css           # Main CSS file
+├── .gitignore           # Git ignore file
+├── LICENSE.md           # MIT License
+├── README.md            # Project documentation
+├── CONTRIBUTING.md      # Contribution guidelines
+├── FOLDER_STRUCTURE.md  # This file
+├── js/                  # JavaScript files
+│   ├── app.js                   # Main application logic
+│   ├── database.js              # Database management
+│   ├── github-api.js            # GitHub integration
+│   ├── deepsearch-api.js        # Deep search functionality
+│   ├── network-visualization.js  # D3.js network visualization
+│   └── contribution-handler.js  # Contribution form handling
+├── data/                # Data files
+│   └── academics.json   # Academic data (created by the application)
+└── img/                 # Image files
+    └── favicon.ico      # Favicon
+```
+
+## File Descriptions
+
+### HTML/CSS Files
+
+- **index.html**: The main HTML file that structures the application.
+- **styles.css**: Contains all styles for the application with a retro terminal aesthetic.
+
+### JavaScript Files
+
+- **app.js**: Core application logic, handling navigation, search, and general UI interactions.
+- **database.js**: Manages the database of academics, storing and retrieving data in localStorage.
+- **github-api.js**: Handles integration with GitHub for contributions and pull requests.
+- **deepsearch-api.js**: Provides functionality for AI-powered deep searches to discover connections.
+- **network-visualization.js**: Creates and manages network visualizations using D3.js.
+- **contribution-handler.js**: Manages the contribution form and submission process.
+
+### Data Files
+
+- **academics.json**: JSON file containing academic data. This file is created and updated by the application when using GitHub integration.
+
+### Documentation
+
+- **README.md**: Main project documentation with overview, features, and usage instructions.
+- **CONTRIBUTING.md**: Guidelines for contributing to the project.
+- **LICENSE.md**: MIT License for the project.
+- **FOLDER_STRUCTURE.md**: This file, explaining the project structure.
+
+## Directory Descriptions
+
+- **js/**: Contains all JavaScript files for the application.
+- **data/**: Contains data files used by the application.
+- **img/**: Contains image files, including the favicon and logo.
+
+## Application Sections
+
+The application is organized into several main sections in the UI:
+
+1. **Search**: The default view, allowing search for academics.
+2. **Academic Profile**: Displays detailed information about an academic.
+3. **Database**: Browsable list of all academics in the database.
+4. **Novelty Tiles**: Recent updates and interesting content.
+5. **Deep Search**: AI-powered search for discovering connections.
+6. **About**: Information about the project.
+7. **Contribute**: Form for adding new information to the database.
+8. **Admin**: Administrative tools for managing the database (hidden by default).
